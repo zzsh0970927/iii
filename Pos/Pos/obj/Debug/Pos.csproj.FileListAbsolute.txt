@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\Pos\Pos\bin\Debug\Pos.exe.config
+C:\Users\User\source\repos\Pos\Pos\bin\Debug\Pos.exe
+C:\Users\User\source\repos\Pos\Pos\bin\Debug\Pos.pdb
+C:\Users\User\source\repos\Pos\Pos\obj\Debug\Pos.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Pos\Pos\obj\Debug\Pos.Form1.resources
+C:\Users\User\source\repos\Pos\Pos\obj\Debug\Pos.Properties.Resources.resources
+C:\Users\User\source\repos\Pos\Pos\obj\Debug\Pos.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Pos\Pos\obj\Debug\Pos.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Pos\Pos\obj\Debug\Pos.exe
+C:\Users\User\source\repos\Pos\Pos\obj\Debug\Pos.pdb

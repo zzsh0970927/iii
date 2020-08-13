@@ -1,0 +1,10 @@
+C:\Users\CK-JASON\Desktop\iii\HomeWork\Student_Struct\Student_Struct\bin\Debug\Student_Struct.exe.config
+C:\Users\CK-JASON\Desktop\iii\HomeWork\Student_Struct\Student_Struct\bin\Debug\Student_Struct.exe
+C:\Users\CK-JASON\Desktop\iii\HomeWork\Student_Struct\Student_Struct\bin\Debug\Student_Struct.pdb
+C:\Users\CK-JASON\Desktop\iii\HomeWork\Student_Struct\Student_Struct\obj\Debug\Student_Struct.csprojAssemblyReference.cache
+C:\Users\CK-JASON\Desktop\iii\HomeWork\Student_Struct\Student_Struct\obj\Debug\Student_Struct.Form1.resources
+C:\Users\CK-JASON\Desktop\iii\HomeWork\Student_Struct\Student_Struct\obj\Debug\Student_Struct.Properties.Resources.resources
+C:\Users\CK-JASON\Desktop\iii\HomeWork\Student_Struct\Student_Struct\obj\Debug\Student_Struct.csproj.GenerateResource.cache
+C:\Users\CK-JASON\Desktop\iii\HomeWork\Student_Struct\Student_Struct\obj\Debug\Student_Struct.csproj.CoreCompileInputs.cache
+C:\Users\CK-JASON\Desktop\iii\HomeWork\Student_Struct\Student_Struct\obj\Debug\Student_Struct.exe
+C:\Users\CK-JASON\Desktop\iii\HomeWork\Student_Struct\Student_Struct\obj\Debug\Student_Struct.pdb
