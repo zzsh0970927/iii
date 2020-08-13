@@ -58,6 +58,8 @@
             this.txtRows = new System.Windows.Forms.TextBox();
             this.btnRows = new System.Windows.Forms.Button();
             this.btn9x9 = new System.Windows.Forms.Button();
+            this.btn100 = new System.Windows.Forms.Button();
+            this.btnRandom = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNumber
@@ -291,6 +293,7 @@
             this.btnFor.TabIndex = 18;
             this.btnFor.Text = "For";
             this.btnFor.UseVisualStyleBackColor = false;
+            this.btnFor.Click += new System.EventHandler(this.btnFor_Click);
             // 
             // btnWhile
             // 
@@ -301,6 +304,7 @@
             this.btnWhile.TabIndex = 18;
             this.btnWhile.Text = "While";
             this.btnWhile.UseVisualStyleBackColor = false;
+            this.btnWhile.Click += new System.EventHandler(this.btnWhile_Click);
             // 
             // btnDo
             // 
@@ -311,6 +315,7 @@
             this.btnDo.TabIndex = 18;
             this.btnDo.Text = "Do";
             this.btnDo.UseVisualStyleBackColor = false;
+            this.btnDo.Click += new System.EventHandler(this.btnDo_Click);
             // 
             // lblRows
             // 
@@ -337,6 +342,7 @@
             this.btnRows.TabIndex = 21;
             this.btnRows.Text = "直角聖誕樹";
             this.btnRows.UseVisualStyleBackColor = false;
+            this.btnRows.Click += new System.EventHandler(this.btnRows_Click);
             // 
             // btn9x9
             // 
@@ -349,11 +355,33 @@
             this.btn9x9.UseVisualStyleBackColor = false;
             this.btn9x9.Click += new System.EventHandler(this.btn9x9_Click);
             // 
+            // btn100
+            // 
+            this.btn100.BackColor = System.Drawing.Color.Gold;
+            this.btn100.Location = new System.Drawing.Point(506, 158);
+            this.btn100.Name = "btn100";
+            this.btn100.Size = new System.Drawing.Size(102, 23);
+            this.btn100.TabIndex = 23;
+            this.btn100.Text = "100的二進位是?";
+            this.btn100.UseVisualStyleBackColor = false;
+            // 
+            // btnRandom
+            // 
+            this.btnRandom.BackColor = System.Drawing.Color.Gold;
+            this.btnRandom.Location = new System.Drawing.Point(506, 190);
+            this.btnRandom.Name = "btnRandom";
+            this.btnRandom.Size = new System.Drawing.Size(81, 23);
+            this.btnRandom.TabIndex = 24;
+            this.btnRandom.Text = "樂透int[]號碼不重複";
+            this.btnRandom.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(673, 427);
+            this.ClientSize = new System.Drawing.Size(784, 532);
+            this.Controls.Add(this.btnRandom);
+            this.Controls.Add(this.btn100);
             this.Controls.Add(this.btn9x9);
             this.Controls.Add(this.btnRows);
             this.Controls.Add(this.txtRows);
@@ -424,6 +452,8 @@
         private System.Windows.Forms.TextBox txtRows;
         private System.Windows.Forms.Button btnRows;
         private System.Windows.Forms.Button btn9x9;
+        private System.Windows.Forms.Button btn100;
+        private System.Windows.Forms.Button btnRandom;
     }
 }
 

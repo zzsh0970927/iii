@@ -67,8 +67,23 @@ namespace ForDoWhile
         private void btnLongestName_Click(object sender, EventArgs e)
         {
             string[] arr0711_str = { "mother張", "emma", "迪克蕭", "J40","Candy","Cindy","Coconut","Motherfacker" };
-            lblAns.Text = arr0711_str[7].ToString();
+            //lblAns.Text = arr0711_str[7].ToString();
             //未完成================================================
+            int count = 0;
+
+            foreach (string i in arr0711_str)
+            {
+                foreach (char x in i)
+                {
+                    if (x == 'C' || x == 'c')
+                    {
+                        count++;
+                        break;
+                    }
+
+                }
+
+            }
         }
 
         private void btnMaxMin_Click(object sender, EventArgs e)
@@ -98,17 +113,22 @@ namespace ForDoWhile
         {
             string[] arr0711_str = { "mother張", "emma", "迪克蕭", "J40", "Candy", "Cindy", "Coconut", "Motherfacker" };
             int count = 0 ;
-            for ( int i = 0; i < arr0711_str.Length; i++) 
+            
+            foreach(string i in arr0711_str)
             {
-                //if (i == "C" || "c")
-                //{
-                //    count++;
-                //}
-
+                foreach(char x in i)
+                {
+                    if (x == 'C'|| x =='c')
+                    {
+                        count++;
+                        break;
+                    }
+                    
+                }
+                
             }
-            //string x;
-            //x = (Array.IndexOf(arr0711_str,"C",0)).ToString();
-            //lblAns.Text = x;
+            lblAns.Text = $"int陣列arr0711_str: mother張  emma  迪克蕭  J40   Candy  Cindy  Coconut   Motherfacker \r\n有C或c的名子有{count}位 ";
+
 
         }
 
@@ -180,18 +200,90 @@ namespace ForDoWhile
 
         private void btn9x9_Click(object sender, EventArgs e)
         {
-            //string sum = "";
+            lblAns.Text = "九九乘法表" + "\r\n";
+
             int i,j;
+
             for ( i = 1 ; i < 10; i++)
             {
                            
                 for ( j = 2; j < 10; j++)
                 {
-                    //sum += j * i;
-                    lblAns.Text += j + "*" + i + "=" + i * j;
+                    
+                    lblAns.Text += string.Format("{0,10:C}", j + "*" + i + "=" + i * j+ "|");
                 }
                 lblAns.Text += "\r\n";
             }
+            
+        }
+
+        private void btnFor_Click(object sender, EventArgs e)
+        {
+            int i = int.Parse(txtFrom.Text);
+            int j = int.Parse(txtTo.Text);
+            int s = int.Parse(txtStep.Text);
+
+            
+            int sum = 0;
+            for (i = int.Parse(txtFrom.Text); i <= int.Parse(txtTo.Text); i += int.Parse(txtStep.Text)) 
+            {
+                sum += i;            
+            }
+            lblAns.Text = $"{txtFrom.Text}到{txtTo.Text}相隔{txtStep.Text}\r\n加總為{+sum}";
+        }
+
+        private void btnWhile_Click(object sender, EventArgs e)
+        {
+            int i = int.Parse(txtFrom.Text);
+            int j = int.Parse(txtTo.Text);
+            int s = int.Parse(txtStep.Text);
+            int sum = 0;
+            while (i <= j)
+            {
+                sum += i;
+                i+=s;
+               
+            }
+            lblAns.Text = $"{txtFrom.Text}到{txtTo.Text}相隔{txtStep.Text}\r\n加總為{+sum}";
+
+        }
+
+        private void btnDo_Click(object sender, EventArgs e)
+        {
+            int i = int.Parse(txtFrom.Text);
+            int j = int.Parse(txtTo.Text);
+            int s = int.Parse(txtStep.Text);
+            int sum = 0;
+            do
+            {
+                sum += i;
+                i += s;
+
+            } while (i <= j);
+            lblAns.Text = $"{txtFrom.Text}到{txtTo.Text}相隔{txtStep.Text}\r\n加總為{+sum}";
+        }
+
+        private void btnRows_Click(object sender, EventArgs e)
+        {
+            
+            int r;
+            r = int.Parse(txtRows.Text);
+            
+
+            string t = "";
+            for (int i = 0; i < r; i++)
+            {
+                string l = "";
+                for (int j = 0; j <= i; j++)
+                {
+                    l += "*";
+                }
+                t +=l +"\r\n";
+            }
+            lblAns.Text = t;
+
+
+
 
         }
     }
